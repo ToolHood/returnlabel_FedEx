@@ -1,0 +1,62 @@
+<!--
+__  __           ______             _____________  __
+_ \/ /______________  /________________  ____/_  |/ /
+__  /_  __ \  ___/_  //_/  _ \_  ___/_  /_   __    / 
+_  / / /_/ / /__ _  ,<  /  __/  /   _  __/   _    |  
+/_/  \____/\___/ /_/|_| \___//_/    /_/      /_/|_|  
+© 2024 Christop Thiel                                                   
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FedEx Return Label Autofill</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 300px;
+    }
+    button {
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: #005ba1;
+    }
+    select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>FedEx Autofill</h1>
+  <p>Select a product and click the button below to fill the FedEx return label form:</p>
+  
+  <label for="productSelect">Products:</label>
+  <select id="productSelect">
+    <option value="OP1">OP1</option>
+    <option value="OP1 8k">OP1 8k</option>
+    <option value="OP1 rgb">OP1 rgb</option>
+    <option value="OP1we">OP1we</option>
+    <option value="XM1r">XM1r</option>
+    <option value="XM1 rgb">XM1 rgb</option>
+    <option value="XM2 w">XM2 w</option>
+    <option value="XM2 we">XM2 we</option>
+  </select>
+  
+  <button id="autofillButton">Fill Form</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
