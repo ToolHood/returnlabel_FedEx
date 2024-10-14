@@ -14,28 +14,65 @@ _  / / /_/ / /__ _  ,<  /  __/  /   _  __/   _    |
   <title>FedEx Return Label Autofill</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
+      background-color: #1d1d1b;
+      color: #d0d0d0;
       padding: 20px;
-      max-width: 300px;
+      width: 200px;
+      margin: 0 auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     }
+
+    h1 {
+      color: #e5b13a;
+      text-align: center;
+    }
+
+    p {
+      font-size: 14px;
+      text-align: center;
+    }
+
+    label {
+      font-size: 14px;
+      color: #e5b13a;
+    }
+
     button {
-      background-color: #0078d4;
-      color: white;
+      background-color: #e5b13a;
+      color: #1d1d1b;
       border: none;
-      padding: 10px 20px;
+      padding: 12px 24px;
       text-align: center;
       font-size: 16px;
+      font-weight: bold;
       cursor: pointer;
       border-radius: 4px;
+      width: 100%;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
+
     button:hover {
-      background-color: #005ba1;
+      background-color: #d4a027;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     }
+
     select {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin: 10px 0;
       border-radius: 4px;
+      border: 1px solid #555555;
+      background-color: #2b2b2b;
+      color: #e5b13a;
+    }
+
+    select option {
+      background-color: #2b2b2b;
+      color: #e5b13a;
     }
   </style>
 </head>
@@ -53,6 +90,15 @@ _  / / /_/ / /__ _  ,<  /  __/  /   _  __/   _    |
     <option value="XM1 rgb">XM1 rgb</option>
     <option value="XM2 w">XM2 w</option>
     <option value="XM2 we">XM2 we</option>
+  </select>
+
+  <label for="colorSelect">Colors:</label>
+  <select id="colorSelect">
+    <option value="Black">Black</option>
+    <option value="White">White</option>
+    <option value="Dark Frost">Dark Frost</option>
+    <option value="White Frost">White Frost</option>
+    <option value="Purple Frost">Purple Frost</option>
   </select>
   
   <button id="autofillButton">Fill Form</button>
